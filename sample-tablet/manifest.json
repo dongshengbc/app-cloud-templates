@@ -1,0 +1,146 @@
+{   
+    "name"        : "Sample Tablet Template"
+  , "description" : "A media template with views for a blog and videos"
+  , "version"     : "1.0"
+  , "devices"     : [ "iPad", "Android Tablet" ]
+  , "platformConfig":{
+        "android":{
+           "nativeNavigation":"false"
+        },
+        "iOS":{
+           "nativeNavigation":"true"
+        }
+     }
+  , "views": [
+      { "navigationTitle" : "Blog"
+      , "navigationIcon"  : "images/icons/home.png"
+      , "uri"             : "blog.html"
+      , "data": [ 
+            { "name": "blog"
+            , "contentFeed": "4dc300477414b322c5000429"
+            , "type": "feed"
+            , "configs":
+                { "items":
+                  { "type": "array"
+                  , "items": 
+                    { "title"       : { "type" : "text" }
+                    , "description" : { "type" : "text" }
+                    , "pubDate"     : { "type" : "date" }
+                    , "author"      : { "type" : "text" }
+                    }
+                  }
+                }
+            }
+        ]
+      , "settings": [
+          { "name"  : "title"
+          , "type"  : "string"
+          , "value" : "Blog"
+          }
+        ]
+      , "styles": [
+          { "name"      : "articleTextColor"
+          , "type"      : "color"
+          , "attribute" : "color"
+          , "value"     : ""
+          }
+        , { "name"      : "headerTextColor"
+          , "type"      : "color"
+          , "attribute" : "color"
+          , "value"     : ""
+          }
+        , { "name"      : "backgroundColor"
+          , "type"      : "color"
+          , "attribute" : "background-color"
+          , "value"     : ""
+          }
+        , { "name"      : "fullArticleTextColor"
+          , "type"      : "color"
+          , "attribute" : "color"
+          , "value"     : ""
+          }
+        , { "name"      : "fullArticleHeaderTextColor"
+          , "type"      : "color"
+          , "attribute" : "color"
+          , "value"     : ""
+          }
+        , { "name"      : "headerTextColor"
+          , "type"      : "color"
+          , "attribute" : "color"
+          , "value"     : ""
+          }
+        , { "name"      : "fullArticleBackgroundColor"
+          , "type"      : "color"
+          , "attribute" : "background-color"
+          , "value"     : ""
+          }
+        , { "name"      : "fullArticleLinkTextColor"
+          , "type"      : "color"
+          , "attribute" : "color"
+          , "value"     : ""
+          }
+        , { "name"      : "fullArticleBackgroundColor"
+          , "type"      : "color"
+          , "attribute" : "background-color"
+          , "value"     : ""
+          }
+        , { "name"      : "fullArticleAuthorTextColor"
+          , "type"      : "color"
+          , "attribute" : "color"
+          , "value"     : ""
+          }
+        , { "name"      : "fullArticleDateTextColor"
+          , "type"      : "color"
+          , "attribute" : "color"
+          , "value"     : ""
+          }
+        ]
+      }
+    , { "navigationTitle" : "Videos"
+      , "navigationIcon"  : "images/icons/videos.png"
+      , "uri"             : "playlists.html"
+      , "data": [
+          { "name": "videos"
+          , "contentConnector": "4e7c8f9e1f19987e1c003ec4"
+          , "type": "video_cloud"
+          }
+        ]
+      ,  "settings": [
+            { "name"  : "embedCode"
+            , "type"  : "string"
+            , "value" : "Paste your Brightcove player embed code here."
+            }
+          , { "name"  : "titleOfPage"
+            , "type"  : "string"
+            , "value" : "Playlists" 
+            }
+          , { "name"  : "aspectRatioOfPlaylistThumbnail" 
+            , "type"  : "Number"
+            , "value" : ".5625"
+            }
+          ]
+      , "styles": [
+          { "name"      : "playlistThumbTitleColor"
+          , "type"      : "color"
+          , "attribute" : "color"
+          , "value"     : ""
+          }
+        , { "name"      : "playlistThumbNumberOfVideosColor"
+          , "type"      : "color"
+          , "attribute" : "color"
+          , "value"     : ""
+          }
+        , { "name"      : "selectedVideoBorderColor"
+          , "type"      : "color"
+          , "attribute" : "border-color"
+          , "value"     : ""
+          }
+        , { "name"      : "videoNameColor"
+          , "type"      : "color"
+          , "attribute" : "color"
+          , "value"     : ""
+          }
+        ]
+      }
+  ]
+}
