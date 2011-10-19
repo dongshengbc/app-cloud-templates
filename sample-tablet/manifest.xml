@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<template>
+  <name>Sample Tablet Template</name>
+  <description>A media template with views for a blog and videos</description>
+  <theme>ocean</theme>
+  <version>1.0</version>
+  <devices>
+    <device name='iPad'/>
+    <device name='Android Tablet'/>
+  </devices>
+  <views>
+    <view>
+      <navigationTitle>Blog</navigationTitle>
+      <navigationIcon>images/icons/home.png</navigationIcon>
+      <uri>blog.html</uri>
+    </view>
+    <view>
+      <navigationTitle>Videos</navigationTitle>
+      <navigationIcon>images/icons/home.png</navigationIcon>
+      <uri>playlists.html</uri>
+    </view>
+  </views>
+</template>
