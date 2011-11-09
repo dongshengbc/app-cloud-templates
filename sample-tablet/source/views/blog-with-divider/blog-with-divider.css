@@ -1,0 +1,7 @@
+.list-divider {
+  padding: 5px;
+}
+
+.list-divider-a { background-color: #cf5a14; color: #ffffff; height: 32px; line-height: 32px; padding-left: 5px; font-size: 14px; font-weight: bold; }
+.list-divider-b { background-color: #cf5a14; color: #ffffff; height: 32px; line-height: 32px; padding-left: 5px; font-size: 14px; font-weight: bold; }
+.list-divider-c { background-color: #cf5a14; color: #ffffff; height: 32px; line-height: 32px; padding-left: 5px; font-size: 14px; font-weight: bold; }
