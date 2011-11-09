@@ -8,7 +8,7 @@
   ],
   "platformConfig": {
     "android": {
-      "nativeNavigation": "false"
+      "nativeNavigation": "true"
     },
     "iOS": {
       "nativeNavigation": "true"
